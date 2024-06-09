@@ -54,7 +54,7 @@ a.groupchat-logo img{width: 100%; height: auto;}
     a.groupchat-logo {top: 30.4%; left: 50%;max-width: 256px; width: calc(80% - 40px);}
     .groupchat-bottom {padding: 63px 20px; gap: 20px;}
     .groupchat-bottom ul li a{font-size: 14px;}
-    .groupchat-bottom p{font-size: 14px;}
+    .groupchat-bottom p{font-size: 12px;}
 
 
 }
