@@ -1,0 +1,75 @@
+/* Typography */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('../font/PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* End typography */
+
+:root{
+	--white: #ffffff;
+	--black: #000000;
+    --blue: #0042d8;
+    --gray: #a6a6a6;
+
+    --Plus_Jakarta: 'Plus Jakarta Sans';
+
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {background-color: var(--blue); color: var(--white); overflow-x: hidden; font-family: var(--Plus_Jakarta); font-size: 18px; font-weight: normal; line-height: 1.2;}
+
+
+.groupchat-wrap{width: 100%; height: 100vh; min-height: 500px; display: flex; flex-flow: row wrap; justify-content: center; align-items: flex-end; position: relative; padding: 40px 20px;}
+a.groupchat-logo { position: absolute; top: 46.5%; left: 50.5%; transform: translate(-50%, -50%); max-width: 226px; width: calc(100% - 40px); }
+a.groupchat-logo img{width: 100%; height: auto;}
+.groupchat-bottom{width: 100%; display: flex; flex-flow: column; align-items: center; gap: 22px; padding-left: 30px;}
+.groupchat-bottom ul{display: flex; gap: 30px; list-style: none;}
+.groupchat-bottom ul li{display: flex;}
+.groupchat-bottom ul li a{text-decoration: none; font-size: 18px; line-height: 1.2; color: var(--white); position: relative;}
+.groupchat-bottom ul li a:after{position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background-color: var(--white); content: ''; transition: all .35s ease-in-out;}
+.groupchat-bottom ul li a:hover:after{width: 100%;}
+.groupchat-bottom p{text-align: center; color: var(--gray);}
+
+
+/* ==== Responsive Style ==== */
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .groupchat-wrap { padding: 63px 20px; }
+    a.groupchat-logo { top: 30.4%; left: 50%;max-width: 322px; width: calc(80% - 40px);}
+    .groupchat-bottom {padding: 0; gap: 27px;}
+    .groupchat-bottom ul li a{font-size: 22px;}
+    .groupchat-bottom p{font-size: 22px;}
+
+
+}
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+
+    .groupchat-bottom ul {gap: 24px;}
+    .groupchat-bottom ul li a{font-size: 18px;}
+    .groupchat-bottom p{font-size: 18px;}
+
+
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+
+}
